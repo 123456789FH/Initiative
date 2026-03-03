@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دعوة عامة – أجاويد ٤ | عسير</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --paper-1:#d6cfb5;
+      --paper-2:#cfc6aa;
+      --paper-3:#efe8d5;
+
+      --ink:#2a1212;
+      --maroon:#6a3434;
+      --maroon-2:#7a3b3b;
+      --gold:#d7b35a;
+
+      --teal:#23a3a0;
+      --blue:#0b59b6;
+      --purple:#6b57c7;
+      --orange:#f39c12;
+      --green:#2f8f2a;
+      --brown:#b04a00;
+
+      --stroke: rgba(60,40,20,.18);
+      --shadow: 0 14px 34px rgba(35,24,10,.18);
+      --shadow2: 0 24px 70px rgba(35,24,10,.26);
+      --radius: 18px;
+      --ring: rgba(215,179,90,.28);
+
+      --motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='720' viewBox='0 0 120 720'%3E%3Crect width='120' height='720' fill='none'/%3E%3Cg opacity='0.38'%3E%3Cg transform='translate(60 60)'%3E%3Cpath d='M0-28 L18 0 L0 28 L-18 0 Z' fill='%236a3434'/%3E%3Cpath d='M0-18 L12 0 L0 18 L-12 0 Z' fill='%23d7b35a' opacity='0.85'/%3E%3C/g%3E%3Cg transform='translate(60 160)'%3E%3Cpath d='M-26 0 L0-20 L26 0 L0 20 Z' fill='%236a3434' opacity='0.8'/%3E%3Ccircle cx='0' cy='0' r='6' fill='%23d7b35a'/%3E%3C/g%3E%3Cg transform='translate(60 260)'%3E%3Cpath d='M-22-10 L22-10 L0 20 Z' fill='%236a3434' opacity='0.75'/%3E%3C/g%3E%3Cg transform='translate(60 360)'%3E%3Cpath d='M0-28 C18-18 18 18 0 28 C-18 18 -18 -18 0-28 Z' fill='%236a3434' opacity='0.7'/%3E%3Ccircle cx='0' cy='0' r='7' fill='%23d7b35a' opacity='0.9'/%3E%3C/g%3E%3Cg transform='translate(60 470)'%3E%3Cpath d='M-26 0 L-10 -16 L10 -16 L26 0 L10 16 L-10 16 Z' fill='%236a3434' opacity='0.65'/%3E%3C/g%3E%3Cg transform='translate(60 590)'%3E%3Cpath d='M0-26 L22-8 L14 20 L-14 20 L-22-8 Z' fill='%236a3434' opacity='0.65'/%3E%3Cpath d='M0-14 L12-4 L8 12 L-8 12 L-12-4 Z' fill='%23d7b35a' opacity='0.9'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:"Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 520px at 15% 12%, rgba(106,52,52,.15), transparent 55%),
+        radial-gradient(900px 520px at 90% 15%, rgba(215,179,90,.16), transparent 55%),
+        linear-gradient(180deg, var(--paper-3) 0%, var(--paper-1) 45%, var(--paper-3) 100%);
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:
+        repeating-linear-gradient(0deg, rgba(0,0,0,.03) 0 1px, transparent 1px 6px),
+        repeating-linear-gradient(90deg, rgba(0,0,0,.02) 0 1px, transparent 1px 7px);
+      mix-blend-mode:multiply;
+      opacity:.10;
+      z-index:0;
+    }
+    body:after{
+      content:"";
+      position:fixed;
+      top:0; bottom:0;
+      right:0;
+      width:74px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.10)),
+        var(--motif);
+      background-repeat: no-repeat, repeat-y;
+      background-position: center, center;
+      border-left: 1px solid rgba(60,40,20,.14);
+      opacity:.85;
+      z-index:1;
+      pointer-events:none;
+    }
+
+    .wrap{
+      max-width: 1100px;
+      margin:0 auto;
+      padding: 18px 16px 92px;
+      position:relative;
+      z-index:2;
+    }
+
+    /* Top bar */
+    .top{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(214,207,181,.82);
+      border-bottom: 1px solid rgba(60,40,20,.16);
+    }
+    .top-inner{
+      max-width:1100px; margin:0 auto;
+      padding: 12px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      flex-wrap: wrap; /* مهم حتى لا يطلع النص خارج الشاشة */
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 0;
+    }
+    .brand .logo-mini{
+      width:44px; height:44px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(106,52,52,.16), rgba(215,179,90,.18));
+      border: 1px solid rgba(60,40,20,.18);
+      display:grid; place-items:center;
+      overflow:hidden;
+      box-shadow: 0 10px 24px rgba(35,24,10,.14);
+      flex:0 0 auto;
+    }
+    .brand .logo-mini img{
+      width:100%; height:100%;
+      object-fit:cover;
+      filter: saturate(1.05) contrast(1.05);
+      display:block;
+    }
+    .brand-txt{ min-width:0; }
+    .brand-txt .t1{
+      font-weight: 900;
+      color: var(--maroon);
+      font-size: 15.5px;
+      white-space:nowrap;
+      overflow:hidden; text-overflow:ellipsis;
+    }
+    .brand-txt .t2{
+      margin-top:2px;
+      color: rgba(42,18,18,.70);
+      font-weight: 800;
+      font-size: 12.5px;
+      white-space:nowrap;
+      overflow:hidden; text-overflow:ellipsis;
+    }
+
+    /* ✅ استبدال النص العلوي */
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.55);
+      border: 1px solid rgba(60,40,20,.18);
+      color: var(--maroon);
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(35,24,10,.10);
+      max-width: 62vw;
+      white-space: normal;
+      line-height: 1.35;
+      text-align:center;
+    }
+    .pill .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(215,179,90,.22);
+      flex:0 0 auto;
+    }
+
+    .btn{
+      border:0;
+      border-radius: 14px;
+      padding: 11px 14px;
+      font-weight: 900;
+      cursor:pointer;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease, border-color .12s ease;
+      display:inline-flex; align-items:center; gap:10px;
+      box-shadow: 0 10px 24px rgba(35,24,10,.14);
+      user-select:none;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--maroon), var(--maroon-2));
+      color:#fff;
+    }
+    .btn.ghost{
+      background: rgba(255,255,255,.75);
+      border: 1px solid rgba(60,40,20,.16);
+      color: var(--maroon);
+    }
+    .btn:focus{ outline:4px solid var(--ring); outline-offset:2px; }
+
+    .hero{
+      margin-top: 14px;
+      border-radius: calc(var(--radius) + 8px);
+      border: 1px solid rgba(60,40,20,.18);
+      background: linear-gradient(135deg, rgba(255,255,255,.66), rgba(255,255,255,.40));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(900px 520px at 12% 18%, rgba(106,52,52,.20), transparent 58%),
+        radial-gradient(900px 520px at 92% 20%, rgba(215,179,90,.20), transparent 58%);
+      pointer-events:none;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 14px;
+      padding: 18px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .hero-grid{ grid-template-columns: 1fr; } }
+
+    .hero-title{
+      margin:0 0 6px;
+      font-weight: 950;
+      font-size: 28px;
+      color: var(--maroon);
+      line-height: 1.35;
+    }
+    .hero-sub{
+      margin:0 0 12px;
+      color: rgba(42,18,18,.76);
+      font-weight: 800;
+      font-size: 14.8px;
+      line-height: 1.95;
+    }
+    .hero-actions{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top: 10px;
+    }
+
+    .poster{
+      background: rgba(255,255,255,.58);
+      border: 1px solid rgba(60,40,20,.16);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 28px rgba(35,24,10,.12);
+      padding: 14px;
+      position:relative;
+      overflow:hidden;
+      display:grid;
+      gap:10px;
+    }
+    .poster:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(520px 240px at 10% 20%, rgba(215,179,90,.20), transparent 60%),
+        radial-gradient(520px 240px at 90% 25%, rgba(106,52,52,.14), transparent 60%);
+      pointer-events:none;
+    }
+    .poster-top{
+      position:relative;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .logo-box{ display:flex; gap:10px; align-items:center; }
+    .logo-big{
+      width:68px; height:68px;
+      border-radius: 20px;
+      border: 1px solid rgba(60,40,20,.16);
+      overflow:hidden;
+      background: rgba(214,207,181,.45);
+      box-shadow: 0 10px 22px rgba(35,24,10,.10);
+      flex: 0 0 auto;
+    }
+    .logo-big img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+    .moe{
+      width:110px; height:54px;
+      border-radius: 16px;
+      border: 1px solid rgba(60,40,20,.14);
+      background: rgba(255,255,255,.65);
+      overflow:hidden;
+      display:grid; place-items:center;
+      box-shadow: 0 10px 22px rgba(35,24,10,.08);
+    }
+    .moe img{ width:100%; height:100%; object-fit:contain; display:block; padding: 6px 8px; }
+
+    .inv-title{
+      position:relative;
+      text-align:center;
+      margin: 6px 0 2px;
+      font-weight: 950;
+      color: #2d4f7b;
+      font-size: 34px;
+      letter-spacing: .2px;
+    }
+    .inv-sub{
+      position:relative;
+      text-align:center;
+      margin: 0;
+      color: rgba(42,18,18,.80);
+      font-weight: 900;
+      line-height: 1.9;
+      font-size: 14.5px;
+    }
+    .inv-track{
+      position:relative;
+      text-align:center;
+      margin: 6px 0 0;
+      color: var(--maroon);
+      font-weight: 950;
+      font-size: 13.8px;
+    }
+
+    .jara{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      margin-top: 6px;
+      position:relative;
+    }
+    .jara .jara-logo{
+      width:120px; height:70px;
+      border-radius: 18px;
+      border: 1px solid rgba(60,40,20,.14);
+      background: rgba(255,255,255,.65);
+      overflow:hidden;
+      display:grid; place-items:center;
+      box-shadow: 0 10px 22px rgba(35,24,10,.08);
+    }
+    .jara img{ width:100%; height:100%; object-fit:contain; padding: 8px; display:block; }
+    .jara small{ color: rgba(42,18,18,.68); font-weight: 900; }
+
+    .info-row{
+      margin-top: 14px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 820px){ .info-row{ grid-template-columns: 1fr; } }
+    .info{
+      background: rgba(255,255,255,.70);
+      border: 1px solid rgba(60,40,20,.16);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 28px rgba(35,24,10,.12);
+      padding: 14px;
+      display:flex;
+      gap: 12px;
+      align-items:center;
+      cursor:pointer;
+      transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+      user-select:none;
+    }
+    .info:hover{
+      transform: translateY(-2px);
+      box-shadow: var(--shadow2);
+      border-color: rgba(106,52,52,.26);
+    }
+    .info .ic{
+      width:52px; height:52px;
+      border-radius: 18px;
+      border: 1px solid rgba(60,40,20,.14);
+      background: rgba(255,255,255,.78);
+      box-shadow: 0 10px 22px rgba(35,24,10,.10);
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .info .ic svg{ width:30px; height:30px; }
+    .info .txt{ min-width:0; }
+    .info .k{
+      color: rgba(42,18,18,.68);
+      font-weight: 900;
+      font-size: 12.5px;
+    }
+    .info .v{
+      margin-top:4px;
+      color: var(--maroon);
+      font-weight: 950;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .section{ margin-top: 16px; display:grid; gap:12px; }
+    .sec-head{ display:flex; align-items:flex-end; justify-content:space-between; gap:10px; }
+    .sec-title{ margin:0; font-weight: 950; color: var(--maroon); font-size: 18px; }
+    .sec-note{ margin:0; color: rgba(42,18,18,.70); font-weight: 800; font-size: 13.5px; }
+
+    .panel{
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(60,40,20,.16);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px;
+    }
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 12px;
+    }
+    @media (max-width: 920px){ .grid-2{ grid-template-columns: 1fr; } }
+
+    .line{ height:1px; background: rgba(60,40,20,.14); margin: 10px 0; }
+
+    .count{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 820px){ .count{ grid-template-columns: repeat(2,1fr);} }
+    .countbox{
+      border-radius: 16px;
+      border: 1px solid rgba(60,40,20,.14);
+      background: rgba(255,255,255,.78);
+      padding: 12px;
+      box-shadow: 0 10px 22px rgba(35,24,10,.10);
+      text-align:center;
+    }
+    .countbox .n{ font-size: 24px; font-weight: 950; color: var(--maroon); }
+    .countbox .l{ margin-top:4px; font-weight: 900; color: rgba(42,18,18,.68); font-size: 12.5px; }
+
+    .form{ display:grid; gap:10px; }
+    .field label{
+      display:block;
+      font-weight: 900;
+      color: rgba(42,18,18,.78);
+      font-size: 13.5px;
+    }
+    .field input, .field select{
+      width:100%;
+      margin-top: 8px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(60,40,20,.18);
+      background: rgba(255,255,255,.86);
+      font-family: inherit;
+      font-weight: 900;
+      color: var(--maroon);
+      outline: none;
+    }
+    .field input:focus, .field select:focus{
+      outline: 4px solid var(--ring);
+      outline-offset: 2px;
+    }
+    .badge{
+      border-radius: 16px;
+      border: 1px solid rgba(60,40,20,.16);
+      background: rgba(255,255,255,.78);
+      padding: 12px;
+      box-shadow: 0 10px 22px rgba(35,24,10,.10);
+      display:none;
+    }
+    .badge h3{ margin:0 0 6px; font-weight: 950; color: var(--maroon); }
+    .badge p{ margin:0; font-weight: 900; color: rgba(42,18,18,.78); line-height: 1.9; }
+    .code{
+      display:inline-flex; align-items:center; gap:10px;
+      margin-top: 8px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px dashed rgba(106,52,52,.35);
+      background: rgba(215,179,90,.12);
+      color: var(--maroon);
+      font-weight: 950;
+      user-select: all;
+    }
+
+    .chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 8px; }
+    .chip{
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(60,40,20,.16);
+      background: rgba(255,255,255,.70);
+      color: var(--maroon);
+      font-weight: 950;
+      cursor:pointer;
+      transition: transform .12s ease;
+    }
+    .chip:hover{ transform: translateY(-1px); }
+    .tip{
+      margin-top: 10px;
+      border-radius: 16px;
+      border: 1px solid rgba(60,40,20,.16);
+      background: rgba(255,255,255,.74);
+      padding: 12px;
+      font-weight: 900;
+      color: rgba(42,18,18,.78);
+      line-height: 1.9;
+    }
+
+    details{
+      border-radius: 16px;
+      border: 1px solid rgba(60,40,20,.16);
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 10px 22px rgba(35,24,10,.10);
+      padding: 12px 12px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight: 950;
+      color: var(--maroon);
+      list-style:none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details p{
+      margin: 10px 0 0;
+      font-weight: 900;
+      color: rgba(42,18,18,.78);
+      line-height: 1.9;
+    }
+
+    .toast{
+      position: fixed;
+      left:16px; right:16px;
+      bottom:78px;
+      margin: 0 auto;
+      max-width: 980px;
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(60,40,20,.18);
+      border-radius: 18px;
+      box-shadow: 0 24px 70px rgba(35,24,10,.26);
+      padding: 14px;
+      z-index: 120;
+      display:none;
+    }
+    .toast.show{ display:block; }
+    .toast .t1{ font-weight: 950; color: var(--maroon); font-size: 14.5px; }
+    .toast .t2{ margin-top:6px; font-weight: 900; color: rgba(42,18,18,.82); line-height:1.9; }
+    .toast .x{
+      position:absolute;
+      left: 12px;
+      top: 12px;
+      width:40px; height:40px;
+      border-radius: 14px;
+      border: 1px solid rgba(60,40,20,.18);
+      background: rgba(255,255,255,.85);
+      cursor:pointer;
+      font-weight: 950;
+      color: var(--maroon);
+    }
+
+    footer{
+      position: fixed;
+      right:0; left:0; bottom:0;
+      background: rgba(214,207,181,.88);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(60,40,20,.16);
+      padding: 12px 16px;
+      text-align:center;
+      font-weight: 900;
+      color: var(--maroon);
+      z-index: 60;
+    }
+
+    @media print{
+      body:after, .top, footer, .toast{ display:none !important; }
+      .wrap{ padding: 0 !important; }
+      .btn{ display:none !important; }
+      .hero, .panel, .info, details{ box-shadow:none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <div class="top-inner">
+      <!-- ✅ النص المطلوب في الأعلى -->
+      <div class="pill" title="الجهة">
+        <span class="dot" aria-hidden="true"></span>
+        الإدارة العامة للتعليم بمنطقة عسير
+      </div>
+
+      <div class="brand">
+        <div class="brand-txt">
+          <div class="t1">أجاويد ٤ – ويستمر الأثر</div>
+          <div class="t2">دعوة عامة (مسار التنمية المجتمعية)</div>
+        </div>
+        <div class="logo-mini" aria-hidden="true">
+          <img src="ajawid-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title" id="eventTitle">دعوة عامة</h1>
+          <p class="hero-sub" id="eventDesc">
+            يسر فريق مبادرة <strong>جرة</strong> دعوتكم لحضور <strong>(معرض المواهب التعليمية)</strong> ضمن <strong>مسار التنمية المجتمعية</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn primary" id="btnRSVP" type="button">✨ تأكيد الحضور</button>
+            <button class="btn ghost" id="btnCalendar" type="button">📅 إضافة للتقويم</button>
+            <button class="btn ghost" id="btnMap" type="button">📍 فتح الموقع</button>
+            <button class="btn ghost" id="btnShare" type="button">🔗 مشاركة الدعوة</button>
+            <button class="btn ghost" id="btnPrint" type="button">🖨️ طباعة PDF</button>
+          </div>
+
+          <div class="section">
+            <div class="sec-head">
+              <div>
+                <h2 class="sec-title">الوقت المتبقي</h2>
+                <p class="sec-note">عداد تنازلي تلقائي حتى موعد الفعالية.</p>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="count" id="countdown"></div>
+              <div class="line"></div>
+              <p class="sec-note" id="countHint" style="margin:0;">سيتم تحديث العداد تلقائيًا.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="poster" aria-label="بطاقة الدعوة">
+          <div class="poster-top">
+            <div class="logo-box">
+              <div class="logo-big">
+                <img src="ajawid-logo.png" alt="شعار أجاويد">
+              </div>
+              <div>
+                <div style="font-weight:950; color:var(--maroon); font-size:14px;">أجاويد ٤</div>
+                <div style="font-weight:900; color:rgba(42,18,18,.70); font-size:12.5px;">ويستمر الأثر</div>
+              </div>
+            </div>
+
+            <div class="moe" title="وزارة التعليم">
+              <img src="moe-logo.png" alt="وزارة التعليم" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;font-weight:950;color:var(--maroon);font-size:12.5px&quot;>وزارة التعليم</div>';">
+            </div>
+          </div>
+
+          <div class="inv-title">دعوة عامة</div>
+
+          <p class="inv-sub" id="posterText">
+            يسر فريق مبادرة <strong>جرة</strong> دعوتكم لحضور<br>
+            <strong>(معرض المواهب التعليمية)</strong>
+          </p>
+          <p class="inv-track" id="posterTrack">مسار التنمية المجتمعية</p>
+
+          <div class="jara">
+            <div class="jara-logo" title="شعار جرة">
+              <img src="jara-logo.png" alt="جرة" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;font-weight:950;color:var(--maroon);font-size:14px&quot;>جُرّة</div>';">
+            </div>
+            <div>
+              <small>الإدارة العامة للتعليم بمنطقة عسير</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="info-row" aria-label="المعلومات الأساسية">
+      <div class="info" id="cardTime" role="button" tabindex="0" title="نسخ الوقت">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="8.5" stroke="#f39c12" stroke-width="2"/>
+            <path d="M12 7.5V12.2L15 14" stroke="#f39c12" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18.8" cy="5.2" r="1.6" fill="#b04a00"/>
+          </svg>
+        </div>
+        <div class="txt">
+          <div class="k">الوقت</div>
+          <div class="v" id="timeText">يوم الثلاثاء – ٩:٠٠ مساءً</div>
+        </div>
+      </div>
+
+      <div class="info" id="cardDate" role="button" tabindex="0" title="إضافة للتقويم">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="4" y="6" width="16" height="14" rx="3" stroke="#6b57c7" stroke-width="2"/>
+            <path d="M8 4V8M16 4V8" stroke="#6b57c7" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4 10H20" stroke="#6b57c7" stroke-width="2"/>
+            <circle cx="9" cy="14" r="1.2" fill="#6b57c7"/>
+            <circle cx="12" cy="14" r="1.2" fill="#6b57c7"/>
+            <circle cx="15" cy="14" r="1.2" fill="#6b57c7"/>
+          </svg>
+        </div>
+        <div class="txt">
+          <div class="k">التاريخ</div>
+          <div class="v" id="dateText">٢٠٢٦/٣/٣م — ١٤٤٧/٩/١٤هـ</div>
+        </div>
+      </div>
+
+      <div class="info" id="cardLoc" role="button" tabindex="0" title="فتح الموقع">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 21s6-6.2 6-11a6 6 0 10-12 0c0 4.8 6 11 6 11z" stroke="#d64545" stroke-width="2"/>
+            <circle cx="12" cy="10" r="2.2" fill="#d64545"/>
+          </svg>
+        </div>
+        <div class="txt">
+          <div class="k">الموقع</div>
+          <div class="v" id="locText">الرشد مول – أبها</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <h2 class="sec-title">تأكيد الحضور</h2>
+          <p class="sec-note">تفاعلي – يحفظ على جهازك فقط (بدون إرسال بيانات).</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="grid-2">
+          <div>
+            <div class="form" id="rsvpForm">
+              <div class="field">
+                <label>الاسم (للبطاقة)</label>
+                <input id="inpName" type="text" placeholder="اكتب اسمك هنا" maxlength="50">
+              </div>
+
+              <div class="field">
+                <label>الصفة</label>
+                <select id="inpRole">
+                  <option value="زائر">زائر</option>
+                  <option value="معلم">معلم</option>
+                  <option value="قائد">قائد</option>
+                  <option value="ولي أمر">ولي أمر</option>
+                  <option value="طالب">طالب</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>عدد المرافقين (اختياري)</label>
+                <select id="inpGuests">
+                  <option value="0">٠</option>
+                  <option value="1">١</option>
+                  <option value="2">٢</option>
+                  <option value="3">٣</option>
+                  <option value="4">٤</option>
+                </select>
+              </div>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn primary" id="btnConfirm" type="button">✅ تسجيل الحضور</button>
+                <button class="btn ghost" id="btnClear" type="button">↺ مسح التسجيل</button>
+              </div>
+            </div>
+
+            <div class="badge" id="badge">
+              <h3>بطاقة دخول</h3>
+              <p id="badgeLine1">—</p>
+              <p id="badgeLine2">—</p>
+              <div class="code" id="badgeCode">CODE-—</div>
+              <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn ghost" id="btnCopyCode" type="button">📋 نسخ الكود</button>
+                <button class="btn ghost" id="btnAgainCalendar" type="button">📅 إضافة للتقويم</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin:0; font-weight:950; color:var(--maroon);">لماذا تحضر؟</h3>
+            <div class="line"></div>
+            <div class="chips" id="chips">
+              <div class="chip" data-tip="تجربة مجتمعية تعكس أثر أجاويد في الواقع وتحوّل القيم إلى ممارسة.">💠 أثر يُقاس</div>
+              <div class="chip" data-tip="مساحة عرض تفاعلية تُبرز المواهب وتدعم التنمية المجتمعية في عسير.">🧩 تفاعل وإبداع</div>
+              <div class="chip" data-tip="فرصة للتواصل وتبادل الخبرات وإلهام مبادرات جديدة.">🤝 شراكات</div>
+              <div class="chip" data-tip="رسالة قيمية: الصدق، التسامح، الانضباط، الانتماء.">🕊️ قيم أجاويد</div>
+            </div>
+            <div class="tip" id="tipBox">اضغط على أي فكرة أعلاه ليظهر شرح مختصر.</div>
+
+            <div class="line"></div>
+
+            <h3 style="margin:0; font-weight:950; color:var(--maroon);">لمسة أجاويد (قيمة اليوم)</h3>
+            <p style="margin:8px 0 0; font-weight:900; color:rgba(42,18,18,.78); line-height:1.9;">
+              اضغط “قيمة اليوم” لتحصل على رسالة سريعة قابلة للتطبيق.
+            </p>
+
+            <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn primary" id="btnValue" type="button">⭐ قيمة اليوم</button>
+              <button class="btn ghost" id="btnChallenge" type="button">🎯 تحدّي سريع</button>
+            </div>
+
+            <div class="tip" id="valueBox" style="margin-top:10px;">—</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <h2 class="sec-title">أسئلة شائعة</h2>
+          <p class="sec-note">لتسهيل تجربة الزائر.</p>
+        </div>
+      </div>
+
+      <div style="display:grid; gap:10px;">
+        <details>
+          <summary>هل التسجيل إلزامي؟</summary>
+          <p>التسجيل يسهّل تنظيم الدخول ويمنحك بطاقة حضور داخل التطبيق، لكنه ليس شرطًا إذا رغبت بالحضور مباشرة.</p>
+        </details>
+
+        <details>
+          <summary>هل تُحفظ بياناتي خارج الجهاز؟</summary>
+          <p>لا. كل ما تسجله يُحفظ على جهازك فقط ولا يتم إرساله لأي جهة.</p>
+        </details>
+
+        <details>
+          <summary>كيف أضيف الدعوة للتقويم؟</summary>
+          <p>اضغط “إضافة للتقويم” وسيتم تنزيل ملف (ICS) يمكن فتحه في تقويم الجوال أو الحاسب.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">
+    <button class="x" id="toastX" type="button">✕</button>
+    <div class="t1" id="toastT1">—</div>
+    <div class="t2" id="toastT2">—</div>
+  </div>
+
+  <footer>أ/ فاطمة هزازي</footer>
+
+  <script>
+    const EVENT = {
+      title: "دعوة عامة",
+      host: "فريق مبادرة جرة",
+      eventName: "معرض المواهب التعليمية",
+      track: "مسار التنمية المجتمعية",
+      region: "عسير",
+      city: "أبها",
+      venue: "الرشد مول",
+
+      startISO: "2026-03-03T21:00:00+03:00",
+      durationHours: 2,
+
+      dateGreg: "2026/3/3م",
+      dateHijri: "1447/9/14هـ",
+      dayName: "يوم الثلاثاء",
+      timeText: "9:00 مساءً",
+
+      mapQuery: "الرشد مول أبها"
+    };
+
+    function toArabicDigits(input){
+      const map = {'0':'٠','1':'١','2':'٢','3':'٣','4':'٤','5':'٥','6':'٦','7':'٧','8':'٨','9':'٩'};
+      return String(input).replace(/[0-9]/g, d => map[d]);
+    }
+    function pad2(n){ return String(n).padStart(2,'0'); }
+
+    function toast(title, body){
+      const el = document.getElementById("toast");
+      document.getElementById("toastT1").textContent = title;
+      document.getElementById("toastT2").textContent = body;
+      el.classList.add("show");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(()=> el.classList.remove("show"), 8500);
+    }
+    document.getElementById("toastX").addEventListener("click", ()=> document.getElementById("toast").classList.remove("show"));
+
+    function copyText(text){
+      navigator.clipboard?.writeText(text).then(()=>{
+        toast("تم النسخ", text);
+      }).catch(()=>{
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+        toast("تم النسخ", text);
+      });
+    }
+
+    // تعبئة النصوص
+    document.getElementById("eventTitle").textContent = EVENT.title;
+    document.getElementById("eventDesc").innerHTML =
+      `يسر ${EVENT.host} دعوتكم لحضور <strong>(${EVENT.eventName})</strong> ضمن <strong>${EVENT.track}</strong>.`;
+    document.getElementById("posterText").innerHTML =
+      `يسر ${EVENT.host} دعوتكم لحضور<br><strong>(${EVENT.eventName})</strong>`;
+    document.getElementById("posterTrack").textContent = EVENT.track;
+    document.getElementById("timeText").textContent = `${EVENT.dayName} – ${toArabicDigits(EVENT.timeText)}`;
+    document.getElementById("dateText").textContent = `${toArabicDigits(EVENT.dateGreg)} — ${toArabicDigits(EVENT.dateHijri)}`;
+    document.getElementById("locText").textContent = `${EVENT.venue} – ${EVENT.city}`;
+
+    // العد التنازلي
+    const countdownEl = document.getElementById("countdown");
+    const countHint = document.getElementById("countHint");
+    const target = new Date(EVENT.startISO).getTime();
+
+    function renderCount(){
+      const now = Date.now();
+      let diff = target - now;
+
+      if(diff <= 0){
+        countdownEl.innerHTML = `
+          <div class="countbox"><div class="n">٠</div><div class="l">أيام</div></div>
+          <div class="countbox"><div class="n">٠</div><div class="l">ساعات</div></div>
+          <div class="countbox"><div class="n">٠</div><div class="l">دقائق</div></div>
+          <div class="countbox"><div class="n">٠</div><div class="l">ثوانٍ</div></div>
+        `;
+        countHint.textContent = "بدأ الموعد أو انتهى. نراك على خير.";
+        return;
+      }
+
+      const sec = Math.floor(diff/1000);
+      const days = Math.floor(sec / 86400);
+      const hours = Math.floor((sec % 86400) / 3600);
+      const mins = Math.floor((sec % 3600) / 60);
+      const s = sec % 60;
+
+      countdownEl.innerHTML = `
+        <div class="countbox"><div class="n">${toArabicDigits(days)}</div><div class="l">أيام</div></div>
+        <div class="countbox"><div class="n">${toArabicDigits(hours)}</div><div class="l">ساعات</div></div>
+        <div class="countbox"><div class="n">${toArabicDigits(mins)}</div><div class="l">دقائق</div></div>
+        <div class="countbox"><div class="n">${toArabicDigits(s)}</div><div class="l">ثوانٍ</div></div>
+      `;
+    }
+    renderCount();
+    setInterval(renderCount, 1000);
+
+    // خريطة / تقويم / مشاركة / طباعة
+    function openMap(){
+      const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(EVENT.mapQuery)}`;
+      window.open(url, "_blank");
+    }
+    function downloadICS(){
+      const dtStart = new Date(EVENT.startISO);
+      const dtEnd = new Date(dtStart.getTime() + EVENT.durationHours*60*60*1000);
+      const fmt = (d)=>{
+        const y = d.getFullYear();
+        const m = pad2(d.getMonth()+1);
+        const da = pad2(d.getDate());
+        const hh = pad2(d.getHours());
+        const mm = pad2(d.getMinutes());
+        return `${y}${m}${da}T${hh}${mm}00`;
+      };
+      const uid = `ajawid-invite-${Date.now()}@asir`;
+      const ics = [
+        "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Ajawid Asir Invite//AR","CALSCALE:GREGORIAN","METHOD:PUBLISH",
+        "BEGIN:VEVENT",
+        `UID:${uid}`,
+        `DTSTAMP:${fmt(new Date())}`,
+        `DTSTART;TZID=Asia/Riyadh:${fmt(dtStart)}`,
+        `DTEND;TZID=Asia/Riyadh:${fmt(dtEnd)}`,
+        `SUMMARY:${EVENT.title} - ${EVENT.eventName}`,
+        `LOCATION:${EVENT.venue} - ${EVENT.city}`,
+        `DESCRIPTION:${EVENT.host} | ${EVENT.track} | ${EVENT.region}`,
+        "END:VEVENT","END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([ics], {type:"text/calendar;charset=utf-8"});
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "دعوة-أجاويد-عسير.ics";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      toast("تم تنزيل ملف التقويم", "افتح الملف لإضافة الموعد إلى تقويمك.");
+    }
+    async function shareInvite(){
+      const text = `${EVENT.title} – ${EVENT.eventName}\n${EVENT.dayName} ${EVENT.timeText}\n${EVENT.venue} – ${EVENT.city}\n(أجاويد – ${EVENT.region})`;
+      const url = location.href;
+      if(navigator.share){
+        try{ await navigator.share({title: EVENT.title, text, url}); }catch(e){}
+      }else{
+        copyText(text + "\n" + url);
+      }
+    }
+
+    document.getElementById("btnMap").addEventListener("click", openMap);
+    document.getElementById("btnCalendar").addEventListener("click", downloadICS);
+    document.getElementById("btnShare").addEventListener("click", shareInvite);
+    document.getElementById("btnPrint").addEventListener("click", ()=> window.print());
+
+    document.getElementById("cardLoc").addEventListener("click", openMap);
+    document.getElementById("cardDate").addEventListener("click", downloadICS);
+    document.getElementById("cardTime").addEventListener("click", ()=> copyText(`${EVENT.dayName} ${EVENT.timeText}`));
+
+    ["cardLoc","cardDate","cardTime"].forEach(id=>{
+      const el = document.getElementById(id);
+      el.addEventListener("keydown", (e)=>{
+        if(e.key==="Enter" || e.key===" "){ e.preventDefault(); el.click(); }
+      });
+    });
+
+    // RSVP
+    const KEY = "ajawid_invite_rsvp_v1";
+    const inpName = document.getElementById("inpName");
+    const inpRole = document.getElementById("inpRole");
+    const inpGuests = document.getElementById("inpGuests");
+
+    const badge = document.getElementById("badge");
+    const badgeLine1 = document.getElementById("badgeLine1");
+    const badgeLine2 = document.getElementById("badgeLine2");
+    const badgeCode = document.getElementById("badgeCode");
+
+    function randomCode(){
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      let s = "";
+      for(let i=0;i<8;i++) s += chars[Math.floor(Math.random()*chars.length)];
+      return "ASR-" + s;
+    }
+    function loadRSVP(){ try{ return JSON.parse(localStorage.getItem(KEY) || "null"); }catch(e){ return null; } }
+    function saveRSVP(obj){ localStorage.setItem(KEY, JSON.stringify(obj)); }
+    function clearRSVP(){ localStorage.removeItem(KEY); }
+
+    function showBadge(data){
+      badge.style.display = "block";
+      badgeLine1.textContent = `${data.name} — (${data.role})`;
+      badgeLine2.textContent = `${EVENT.eventName} | ${EVENT.venue} – ${EVENT.city}`;
+      badgeCode.textContent = data.code;
+    }
+    function hideBadge(){ badge.style.display = "none"; }
+
+    const existing = loadRSVP();
+    if(existing){
+      inpName.value = existing.name || "";
+      inpRole.value = existing.role || "زائر";
+      inpGuests.value = String(existing.guests ?? 0);
+      showBadge(existing);
+    }
+
+    document.getElementById("btnConfirm").addEventListener("click", ()=>{
+      const name = (inpName.value || "").trim();
+      if(name.length < 2){
+        toast("تنبيه", "اكتب اسمًا صحيحًا لإصدار بطاقة الدخول.");
+        inpName.focus();
+        return;
+      }
+      const role = inpRole.value;
+      const guests = Number(inpGuests.value || 0);
+
+      const data = { name, role, guests, code: existing?.code || randomCode(), ts: Date.now() };
+      saveRSVP(data);
+      showBadge(data);
+      toast("تم تسجيل حضورك", "تم إصدار بطاقة دخول داخل التطبيق.");
+    });
+
+    document.getElementById("btnClear").addEventListener("click", ()=>{
+      const ok = confirm("هل تريد مسح تسجيل الحضور؟");
+      if(!ok) return;
+      clearRSVP();
+      hideBadge();
+      inpName.value = "";
+      inpRole.value = "زائر";
+      inpGuests.value = "0";
+      toast("تم المسح", "يمكنك تسجيل الحضور مرة أخرى في أي وقت.");
+    });
+
+    document.getElementById("btnCopyCode").addEventListener("click", ()=> copyText(badgeCode.textContent.trim()));
+    document.getElementById("btnAgainCalendar").addEventListener("click", downloadICS);
+
+    document.getElementById("btnRSVP").addEventListener("click", ()=>{
+      document.getElementById("rsvpForm").scrollIntoView({behavior:"smooth", block:"start"});
+      setTimeout(()=> inpName.focus(), 350);
+    });
+
+    // أفكار + قيمة اليوم
+    const tipBox = document.getElementById("tipBox");
+    document.getElementById("chips").addEventListener("click", (e)=>{
+      const chip = e.target.closest(".chip");
+      if(!chip) return;
+      tipBox.textContent = chip.getAttribute("data-tip");
+    });
+
+    const VALUES = [
+      {k:"الصدق", msg:"قل الحقيقة بلطف… فالوضوح يصنع ثقة ويصنع أثرًا."},
+      {k:"التسامح", msg:"سامح مع حفظ الاحترام… التسامح قوة تُصلح القلوب."},
+      {k:"الانضباط", msg:"التزم بخطوة صغيرة اليوم… الثبات يصنع إنجازًا كبيرًا."},
+      {k:"الانتماء", msg:"اخدم مكانك بتصرف واحد… الانتماء سلوك لا شعار."}
+    ];
+    const valueBox = document.getElementById("valueBox");
+    document.getElementById("btnValue").addEventListener("click", ()=>{
+      const v = VALUES[Math.floor(Math.random()*VALUES.length)];
+      valueBox.textContent = `قيمة اليوم: ${v.k} — ${v.msg}`;
+    });
+
+    const CH = [
+      "خصص ٥ دقائق لمساعدة شخص أو ترتيب مكان… ثم لاحظ أثر ذلك.",
+      "اختر كلمة طيبة اليوم بدل الرد الحاد… وراقب النتيجة.",
+      "ابدأ مهمة صغيرة الآن وأنهِها… هذا هو الانضباط الحقيقي.",
+      "اكتب فكرة تطوير للمكان بطريقة محترمة… هذا انتماء."
+    ];
+    document.getElementById("btnChallenge").addEventListener("click", ()=>{
+      toast("تحدّي سريع", CH[Math.floor(Math.random()*CH.length)]);
+    });
+
+    setTimeout(()=>{
+      toast("مرحبًا بك", "هذه دعوة تفاعلية بهوية أجاويد – عسير. يمكنك تأكيد الحضور وإضافة الموعد للتقويم.");
+    }, 900);
+  </script>
+</body>
+</html>
